@@ -16,6 +16,7 @@ a {
   color: steelblue;
 }
 
+
 /* Nav Menu */
 
 .heading a { 
@@ -41,7 +42,8 @@ nav li {
 }
 
 nav li {
-  width: 50%;
+  width: auto;
+  margin: 8px;
 }
 
 nav a {
@@ -55,6 +57,7 @@ nav a {
 .content { 
   text-align: left;
   float: left;
+  margin: 0 25px;
 }
 
 .content li{ 
@@ -63,17 +66,35 @@ nav a {
 
 .container {
   background: #fff;
-  padding: 15px;
-  margin:0 auto;
+  position: absolute; 
+  margin: 0 auto;
+  height: 100%;
 }	
+
+.bigbutton a{
+  font-size: 12px;
+  font-style: italic; 
+  color: #2F3D31;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  border: 1px solid #2F3D31;
+  padding: 12px;
+  display: block;
+  text-align: center;
+  height: 100%;
+  width: 30%;
+  
+}
 
 /* Footer */
 .footer {
-  margin: 60px 0  40px;
+  padding: 50px 0  40px;
+  position: absolute; 
+  bottom: 0; 
 }
 
 .links {
-  padding: 10px;
+  margin: 10px;
 }
 
 @media (min-width: 550px) {
@@ -84,7 +105,7 @@ nav a {
 
 
   nav a {
-    padding: 5px;
+    margin: 5px;
   }
 }
 
