@@ -89,7 +89,7 @@ nav a {
 
 /* Contact Form */
 input[type="email"], input[type="text"],textarea {
-  width: 350px;
+  width: 100%;
 }
 
 textarea {
@@ -111,6 +111,7 @@ textarea {
   margin: 10px;
 }
 
+/* Media */
 @media (min-width: 550px) {
 
   nav li {
@@ -121,5 +122,9 @@ textarea {
   nav a {
     margin: 5px;
   }
+  
+  input[type="email"], input[type="text"],textarea {
+  width: 350px;
+}
 }
 
