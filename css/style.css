@@ -132,11 +132,13 @@ textarea {
   }
   
   input[type="email"], input[type="text"],textarea {
-  width: 80%;
+  width: 300px;
 }
 
 .profile img {
 	margin: 25px;
+	width: 80%;
+	height: auto;
 
 }
 }
