@@ -30,6 +30,10 @@ a {
   display: inline-block;
 }
 
+.heading a:hover {
+
+  border: 1px  solid #ff0;
+}
 
 nav ul {
   list-style: none;
@@ -53,6 +57,13 @@ nav a {
 }
 
 /* Content */
+.container {
+  background: #fff;
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 40px;
+  max-width: 800px;
+}	
 
 .content { 
   text-align: left;
@@ -63,14 +74,6 @@ nav a {
 .content li{ 
   margin: 0 0 5px 0;
 }
-
-.container {
-  background: #fff;
-  margin: 0 auto;
-  height: 100%;
-  margin-top: 30px;
-  max-width: 800px;
-}	
 
 .bigbutton a{
   font-size: 12px;
@@ -84,7 +87,14 @@ nav a {
   text-align: center;
   height: 100%;
   max-width: 270px;
-  
+}
+
+.profile img {
+    border-radius:50%;
+	text-align:center;
+	width:300px;
+	margin: 25px;
+
 }
 
 /* Contact Form */
