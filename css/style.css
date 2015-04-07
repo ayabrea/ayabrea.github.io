@@ -93,8 +93,6 @@ nav a {
     border-radius:50%;
 	text-align:center;
 	width:300px;
-	margin: 25px;
-
 }
 
 /* Contact Form */
@@ -135,6 +133,11 @@ textarea {
   
   input[type="email"], input[type="text"],textarea {
   width: 350px;
+}
+
+.profile img {
+	margin: 25px;
+
 }
 }
 
