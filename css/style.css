@@ -1,5 +1,5 @@
 body {
-  background: #A8FFE2;
+  background: #ccffee;
   font-family: 'Courier', 'Arial', sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -13,7 +13,12 @@ a {
   outline: none;
   text-decoration: none;
   font-size: 12px;
-  color: steelblue;
+  color: #FFAF8C;
+}
+
+a:hover {
+  text-decoration:underline;
+    color: #3D5C99;
 }
 
 
@@ -31,8 +36,9 @@ a {
 }
 
 .heading a:hover {
-
-  border: 1px  solid #ff0;
+  border: 1px solid #fce88d;
+  color: #2F3D31;
+  text-decoration: none;
 }
 
 nav ul {
@@ -107,6 +113,18 @@ input[type="email"], input[type="text"],textarea {
 textarea {
   height: 100px;
 }
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #95e7cc;
+  outline: 0; }
 
 .contact {
   text-align: center; 
