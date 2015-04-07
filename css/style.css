@@ -92,7 +92,11 @@ nav a {
 .profile img {
     border-radius:50%;
 	text-align:center;
-	width:300px;
+	width:270px;
+}
+
+.profile {
+    padding-bottom:25px;	
 }
 
 /* Contact Form */
@@ -137,9 +141,8 @@ textarea {
 
 .profile img {
 	margin: 25px;
-	width: 80%;
+	width: 90%;
 	height: auto;
-
 }
 }
 
