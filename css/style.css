@@ -18,7 +18,7 @@ a {
 
 a:hover {
   text-decoration:underline;
-    color: #3D5C99;
+  color: #3D5C99;
 }
 
 
@@ -93,6 +93,10 @@ nav a {
   text-align: center;
   height: 100%;
   max-width: 270px;
+}
+
+.bigbutton a:hover {
+  text-decoration:none;
 }
 
 .profile img {
