@@ -1,2 +1,2 @@
 # ayabrea.github.io
-Allison Yan - Portfolio
+Allison Yan - small

@@ -4,7 +4,7 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #2F3D31;
-  font-size: 12px;
+  font-size: 1.25em;
   line-height: 20px;
   text-align:center; 
 }
@@ -12,38 +12,43 @@ body {
 a {
   outline: none;
   text-decoration: none;
-  font-size: 12px;
   color: #FFAF8C;
 }
 
 a:hover {
-  text-decoration:underline;
+  text-decoration:none;
   color: #fce88d;
 }
 
 
 /* Nav Menu */
 
-.heading a { 
+.header a { 
   font-size: 16px;
   color: #2F3D31;
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-top: 50px;
   border: 1px solid #2F3D31;
   padding: 12px;
   display: inline-block;
+  margin-top:25px;
 }
 
-.heading a:hover {
+.header a:hover {
   border: 1px solid #fce88d;
   color: #2F3D31;
   text-decoration: none;
 }
 
+.header a:active {
+  background: #fce88d;
+  color: #ffffff;
+  border: 1px solid #fce88d;
+}
+
 nav ul {
   list-style: none;
-  font-size: 0;
+  font-size:12px;
 }
 
 nav li {
@@ -69,7 +74,8 @@ nav a {
   height: 100%;
   margin-top: 40px;
   max-width: 800px;
-}	
+  padding:25px;
+}
 
 .content { 
   text-align: left;
@@ -81,6 +87,35 @@ nav a {
   margin: 0 0 5px 0;
 }
 
+.content a {
+  color: #2F3D31;
+  border-bottom:1px dotted #2F3D31;
+}
+.vertical {
+  vertical-align:middle;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 12px; 
+  letter-spacing: 0.1em;
+  margin-bottom:1rem;
+}
+
+.description {
+  font-size: 11px; 
+}
+
+
+.content a:hover {
+  color: #2F3D31;
+  border: 0; 
+}
+
+.bigbutton {
+  padding: 20px 0;
+}	 
+
 .bigbutton a{
   font-size: 12px;
   font-style: italic; 
@@ -89,7 +124,7 @@ nav a {
   margin: 0 auto;
   border: 1px solid #2F3D31;
   padding: 12px;
-  display: block;
+  display: inline;
   text-align: center;
   height: 100%;
   max-width: 270px;
@@ -97,6 +132,13 @@ nav a {
 
 .bigbutton a:hover {
   text-decoration:none;
+  border: 1px solid #2F3D31; 
+}
+
+.bigbutton a:active {
+  background: #fce88d;
+  color: #ffffff;
+  border: 1px solid #fce88d;
 }
 
 .profile img {
@@ -137,13 +179,14 @@ select:focus {
 
 /* Footer */
 .footer {
-  padding: 25px 0px;
+  padding: 45px 0 0;
   bottom: 0; 
 }
 
 .links {
   margin: 10px;
 }
+
 
 /* Media */
 @media (min-width: 550px) {
@@ -162,8 +205,7 @@ select:focus {
 }
 
 .profile img {
-	margin: 25px;
-	width: 90%;
+	width: 40%;
 	height: auto;
 }
 }
