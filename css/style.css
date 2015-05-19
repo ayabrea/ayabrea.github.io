@@ -53,6 +53,7 @@ a:hover {
   padding: 12px;
   display: inline-block;
   margin-top:25px;
+  background: #fff; 
 }
 
 .header a:hover {
@@ -67,19 +68,26 @@ a:hover {
   border: 1px solid #fce88d;
 }
 
+.header-box { 
+}
+
+#menu { 
+  display:block;
+  background: #fff; 
+}
+
 nav ul {
   list-style: none;
   font-size:12px;
+  margin-bottom:0;
 }
 
 nav li {
   margin-bottom: 0;
   display: inline-block;
-}
-
-nav li {
+  background: #fff;
   width: auto;
-  margin: 8px;
+  padding: 10px;
 }
 
 nav a {
