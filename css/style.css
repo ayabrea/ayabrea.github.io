@@ -45,14 +45,14 @@ a:hover {
 /* Nav Menu */
 
 .header a { 
-  font-size: 16px;
+  font-size: 14px;
   color: #2F3D31;
   text-transform: uppercase;
   letter-spacing: 5px;
   border: 1px solid #2F3D31;
-  padding: 12px;
+  padding: 5px;
   display: inline-block;
-  margin-top:25px;
+  margin-top:5px;
   background: #fff; 
 }
 
@@ -66,9 +66,6 @@ a:hover {
   background: #fce88d;
   color: #ffffff;
   border: 1px solid #fce88d;
-}
-
-.header-box { 
 }
 
 #menu { 
@@ -85,7 +82,6 @@ nav ul {
 nav li {
   margin-bottom: 0;
   display: inline-block;
-  background: #fff;
   width: auto;
   padding: 10px;
 }
@@ -101,7 +97,7 @@ nav a {
   background: #fff;
   margin: 0 auto;
   height: 100%;
-  margin-top: 40px;
+  margin-top: 10px;
   max-width: 800px;
   padding:25px;
 }
@@ -170,13 +166,13 @@ nav a {
 }
 
 .profile img {
-    border-radius:50%;
-	text-align:center;
-	width:270px;
+  border-radius:50%;
+  text-align:center;
+  width:270px;
 }
 
 .profile {
-    padding-bottom:25px;	
+  padding-bottom:25px;	
 }
 
 /* Contact Form */
@@ -219,22 +215,45 @@ select:focus {
 /* Media */
 @media (min-width: 550px) {
 
-  nav li {
-    width: auto;
-  }
+nav li {
+  width: auto;
+}
 
 
-  nav a {
-    margin: 5px;
-  }
+nav a {
+  margin: 5px;
+}
   
-  input[type="email"], input[type="text"],textarea {
+input[type="email"], input[type="text"],textarea {
   width: 300px;
 }
 
 .profile img {
-	width: 40%;
-	height: auto;
+  width: 40%;
+  height: auto;
 }
+
+.header a { 
+  font-size: 16px;
+  color: #2F3D31;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 1px solid #2F3D31;
+  padding: 12px;
+  display: inline-block;
+  margin-top:10px;
+  background: #fff; 
+}
+
+.container {
+  background: #fff;
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 40px;
+  max-width: 800px;
+  padding:25px;
+}
+
+
 }
 
