@@ -13,6 +13,10 @@ a {
   outline: none;
   text-decoration: none;
   color: #FFAF8C;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 a:hover {
@@ -84,6 +88,7 @@ nav li {
   display: inline-block;
   width: auto;
   padding: 10px;
+  background: #fff; 
 }
 
 nav a {
@@ -136,6 +141,16 @@ nav a {
   border: 0; 
 }
 
+.content .header a {
+  border: 1px solid #2F3D31;
+}
+
+
+.content .header a:hover{
+  border: 1px solid #fff; 
+  color: #fff;
+}
+
 .bigbutton {
   padding: 20px 0;
 }	 
@@ -156,7 +171,8 @@ nav a {
 
 .bigbutton a:hover {
   text-decoration:none;
-  border: 1px solid #2F3D31; 
+  border: 1px solid #2F3D31;   
+  color: #ffffff;
 }
 
 .bigbutton a:active {
@@ -174,6 +190,76 @@ nav a {
 .profile {
   padding-bottom:25px;	
 }
+
+.folio-piece {
+  background: #fff; 
+  position: relative; 
+  width: 300px; 
+  text-align: left;
+  height:300px;
+}
+
+.folio-piece:hover {  
+  opacity:1;
+}
+
+.folio-piece img { 
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+} 
+
+.folio-piece:hover img { 
+  opacity: 0.15;
+} 
+
+.caption {
+  display:none;
+  position: absolute; 
+  bottom:0; 
+  -webkit-transition: all 0.3s ease-in-out;
+  background: #fff;
+  font-size: 12px;
+  font-style: italic; 
+  color: #2F3D31;
+  letter-spacing: 5px;
+  margin: 3%;
+  border: 1px solid #2F3D31;
+  max-width:50%;
+  float:left;
+}
+
+.caption p { 
+  font-size: 0.8em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+} 
+
+.caption  a{ 
+  color: #000;
+  display:block;
+  padding: 1em;   
+} 
+
+.folio-piece:hover .caption {
+  display:block;
+  -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.project-title h4 {
+  font-weight: bold; 
+}
+
+.project-subtitle { 
+  font-style: italic;
+}
+
+.project-step {
+  color: #a3ccbe;
+}
+
 
 /* Contact Form */
 input[type="email"], input[type="text"],textarea {
@@ -203,12 +289,12 @@ select:focus {
 
 /* Footer */
 .footer {
-  padding: 45px 0 0;
+  padding: 10px;
   bottom: 0; 
 }
 
 .links {
-  margin: 10px;
+  margin: 20px;
 }
 
 
