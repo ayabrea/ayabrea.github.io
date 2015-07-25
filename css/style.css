@@ -42,14 +42,17 @@ a:hover {
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
   background-color: #fce88d;
-  color: #fff;
+  border: 1px solid #fce88d;
+  color: #2F3D31;
+  text-decoration: none;
+}
+
 }
 
 
 /* Nav Menu */
 
-.header a { 
-  font-size: 14px;
+.bigbutton a { 
   color: #2F3D31;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -60,13 +63,7 @@ a:hover {
   background: #fff; 
 }
 
-.header a:hover {
-  border: 1px solid #fce88d;
-  color: #fff;
-  text-decoration: none;
-}
-
-.header a:active {
+.bigbutton a:active {
   background: #fce88d;
   color: #ffffff;
   border: 1px solid #fce88d;
@@ -141,45 +138,19 @@ nav a {
   border: 0; 
 }
 
-.content .header a {
+/* Button Behaviour in Content Box */
+.content .bigbutton a {
   border: 1px solid #2F3D31;
-}
-
-
-.content .header a:hover{
-  border: 1px solid #fff; 
-  color: #fff;
-}
-
-.bigbutton {
-  padding: 20px 0;
-}	 
-
-.bigbutton a{
-  font-size: 12px;
+  text-transform: none; 
+  font-size: 1em; 
   font-style: italic; 
+}
+
+.content .bigbutton a:hover{
+  border: 1px solid #fce88d; 
   color: #2F3D31;
-  letter-spacing: 5px;
-  margin: 0 auto;
-  border: 1px solid #2F3D31;
-  padding: 12px;
-  display: inline;
-  text-align: center;
-  height: 100%;
-  max-width: 270px;
 }
 
-.bigbutton a:hover {
-  text-decoration:none;
-  border: 1px solid #2F3D31;   
-  color: #ffffff;
-}
-
-.bigbutton a:active {
-  background: #fce88d;
-  color: #ffffff;
-  border: 1px solid #fce88d;
-}
 
 .profile img {
   border-radius:50%;
@@ -319,8 +290,8 @@ input[type="email"], input[type="text"],textarea {
   height: auto;
 }
 
-.header a { 
-  font-size: 16px;
+.bigbutton a { 
+  font-size: 1.25em;
   color: #2F3D31;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -329,6 +300,10 @@ input[type="email"], input[type="text"],textarea {
   display: inline-block;
   margin-top:10px;
   background: #fff; 
+}
+
+.content .bigbutton {
+ font-size: 1em; 
 }
 
 .container {
