@@ -219,16 +219,23 @@ nav a {
 
 }
 
-.project-title h4 {
+.project-title {
   font-weight: bold; 
+  text-align:center; 
 }
 
 .project-subtitle { 
   font-style: italic;
+  text-align:center; 
+}
+
+.project-type {
+  text-align:center; 
 }
 
 .project-step {
   color: #a3ccbe;
+  text-align:center; 
 }
 
 
