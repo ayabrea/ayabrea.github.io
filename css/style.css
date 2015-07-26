@@ -238,6 +238,11 @@ nav a {
   text-align:center; 
 }
 
+.project-substep {
+  color: #a3ccbe;
+  text-align: center; 
+}
+
 
 /* Contact Form */
 input[type="email"], input[type="text"],textarea {
