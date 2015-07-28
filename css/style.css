@@ -156,7 +156,6 @@ nav a {
   color: #2F3D31;
 }
 
-
 .profile img {
   border-radius:50%;
   text-align:center;
@@ -171,8 +170,7 @@ nav a {
   background: #fff; 
   position: relative; 
   width: 300px; 
-  text-align: left;
-  height:300px;
+  margin:0 auto; 
 }
 
 .folio-piece:hover {  
@@ -190,18 +188,6 @@ nav a {
 
 .caption {
   display:none;
-  position: absolute; 
-  bottom:0; 
-  background: #fff;
-  font-size: 12px;
-  font-style: italic; 
-  color: #2F3D31;
-  letter-spacing: 1px;
-  line-height:1.4em;
-  margin: 3%;
-  border: 1px solid #2F3D31;
-  float:left;
-  text-align: center;
 }
 
 .caption p { 
@@ -213,9 +199,7 @@ nav a {
 } 
 
 .caption  a{ 
-  color: #000;
-  display:block;
-  padding: 1em;   
+  display:none; 
 } 
 
 .folio-piece:hover .caption {
@@ -377,6 +361,28 @@ input[type="email"], input[type="text"],textarea {
   left:0;
   width:100%;  
 }
+
+.caption {
+  display:none;
+  position: absolute; 
+  bottom:0; 
+  background: #fff;
+  font-size: 12px;
+  font-style: italic; 
+  color: #2F3D31;
+  letter-spacing: 1px;
+  line-height:1.4em;
+  margin: 3%;
+  border: 1px solid #2F3D31;
+  float:left;
+  text-align: center;
+}
+
+.caption  a{ 
+  color: #000;
+  display:block;
+  padding: 1em;   
+} 
 
 }
 
