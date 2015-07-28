@@ -4,8 +4,8 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #2F3D31;
-  font-size: 1.25em;
-  line-height: 20px;
+  font-size: 1.6em;
+  line-height: 1.7em;
   text-align:center; 
 }
 
@@ -72,6 +72,7 @@ a:hover {
 #menu { 
   display:block;
   background: #fff; 
+  font-size: 0.9em;
 }
 
 nav ul {
@@ -105,8 +106,9 @@ nav a {
 }
 
 .content { 
-  text-align: left;
+  text-align: justify;
   float: left;
+  font-family: 'Source Serif Pro', 'Georgia', serif;
 }
 
 .content li{ 
@@ -130,6 +132,8 @@ nav a {
 
 .description {
   font-size: 11px; 
+  text-align: justify;
+  font-family: 'Courier', sans-serif;
 }
 
 
@@ -140,6 +144,7 @@ nav a {
 
 /* Button Behaviour in Content Box */
 .content .bigbutton a {
+  font-family: 'Courier', sans-serif;
   border: 1px solid #2F3D31;
   text-transform: none; 
   font-size: 1em; 
@@ -187,21 +192,21 @@ nav a {
   display:none;
   position: absolute; 
   bottom:0; 
-  -webkit-transition: all 0.3s ease-in-out;
   background: #fff;
   font-size: 12px;
   font-style: italic; 
   color: #2F3D31;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
+  line-height:1.4em;
   margin: 3%;
   border: 1px solid #2F3D31;
-  max-width:50%;
   float:left;
+  text-align: center;
 }
 
 .caption p { 
   font-size: 0.8em;
-  -webkit-margin-before: 0em;
+  -webkit-margin-before:1em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
@@ -216,29 +221,47 @@ nav a {
 .folio-piece:hover .caption {
   display:block;
   -webkit-transition: all 0.3s ease-in-out;
+}
+
+.hero {
+  position:relative; 
+  width: 100%; 
+}
+
+.hero-img {
+  display:none; 
+}
+
+.project-details {
 
 }
 
 .project-title {
+  font-family: 'Courier', sans-serif;
   font-weight: bold; 
   text-align:center; 
+  letter-spacing: 0.025em;
 }
 
 .project-subtitle { 
+  font-family: 'Courier', sans-serif;
   font-style: italic;
   text-align:center; 
 }
 
 .project-type {
+  font-family: 'Courier', sans-serif;
   text-align:center; 
 }
 
 .project-step {
+  font-family: 'Courier', sans-serif;
   color: #a3ccbe;
   text-align:center; 
 }
 
 .project-substep {
+  font-family: 'Courier', sans-serif;
   color: #a3ccbe;
   text-align: center; 
 }
@@ -246,13 +269,18 @@ nav a {
 
 /* Contact Form */
 input[type="email"], input[type="text"],textarea {
-  width: 100%;
+  max-width: 100%;
 }
 
 textarea {
   height: 100px;
 }
 
+input[type="submit"]:hover{
+  border: 1px solid #95e7cc;
+  outline: 0; 
+  }
+  
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -267,13 +295,19 @@ select:focus {
 
 .contact {
   text-align: center; 
-  margin: 0 25px; 
+  margin-top: 25px; 
+  font-family: 'Source Serif Pro', 'Georgia', serif;
 }
 
 /* Footer */
 .footer {
   padding: 10px;
-  bottom: 0; 
+  bottom: 0;
+  margin-top: 15px;
+}
+
+.copyright {
+  font-size: 0.9em; 
 }
 
 .links {
@@ -327,6 +361,17 @@ input[type="email"], input[type="text"],textarea {
   padding:25px;
 }
 
+.hero-img {
+  display:inline;
+}
+
+.project-details {
+  color: #fff;
+  position: absolute;
+  top: 12em;
+  left:0;
+  width:100%;  
+}
 
 }
 
