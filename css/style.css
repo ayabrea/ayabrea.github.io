@@ -70,9 +70,10 @@ a:hover {
 }
 
 #menu { 
-  display:block;
   background: #fff; 
   font-size: 0.9em;
+  position: relative;
+  z-index: 1000;
 }
 
 nav ul {
@@ -90,9 +91,8 @@ nav li {
 }
 
 nav a {
-  position: relative;
   width: 100%;
-  height: 20px;
+  height: 20px;  
 }
 
 /* Content */
@@ -185,7 +185,7 @@ nav a {
 } 
 
 .folio-piece:hover img { 
-  opacity: 0.15;
+  opacity: 0.6;
 } 
 
 .caption {
@@ -266,6 +266,11 @@ nav a {
   text-align: center; 
 }
 
+.project-img {
+    display: block;
+    margin:0 auto; 
+	padding:1em;
+}
 
 /* Contact Form */
 input[type="email"], input[type="text"],textarea {
