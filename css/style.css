@@ -180,7 +180,6 @@ nav a {
 .folio-piece img { 
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
-  height:300px;
 } 
 
 .folio-piece:hover img { 
@@ -257,6 +256,10 @@ nav a {
 	padding:1em;
 }
 
+.right {
+    text-align: right; 
+}
+
 /* Contact Form */
 input[type="email"], input[type="text"],textarea {
   max-width: 100%;
@@ -306,7 +309,7 @@ select:focus {
 
 
 /* Media */
-@media (min-width: 550px) {
+@media (min-width: 500px) {
 
 nav li {
   width: auto;
