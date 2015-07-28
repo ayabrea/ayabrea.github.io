@@ -169,8 +169,8 @@ nav a {
 .folio-piece {
   background: #fff; 
   position: relative; 
-  width: 300px; 
   margin:0 auto; 
+  padding:20px
 }
 
 .folio-piece:hover {  
@@ -180,6 +180,7 @@ nav a {
 .folio-piece img { 
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
+  height:300px;
 } 
 
 .folio-piece:hover img { 
