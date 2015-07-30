@@ -12,7 +12,7 @@ body {
 a {
   outline: none;
   text-decoration: none;
-  color: #FFAF8C;
+  color: #FF8E5C;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -21,7 +21,7 @@ a {
 
 a:hover {
   text-decoration:none;
-  color: #fce88d;
+  color: #FFE04F;
 }
 
 /* Fade */
@@ -41,8 +41,8 @@ a:hover {
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #fce88d;
-  border: 1px solid #fce88d;
+  background-color: #FFE04F;
+  border: 1px solid #FFE04F;
   color: #2F3D31;
   text-decoration: none;
 }
@@ -64,9 +64,9 @@ a:hover {
 }
 
 .bigbutton a:active {
-  background: #fce88d;
+  background: #FFE04F;
   color: #ffffff;
-  border: 1px solid #fce88d;
+  border: 1px solid #FFE04F;
 }
 
 #menu { 
@@ -152,7 +152,7 @@ nav a {
 }
 
 .content .bigbutton a:hover{
-  border: 1px solid #fce88d; 
+  border: 1px solid #FFE04F; 
   color: #2F3D31;
 }
 
