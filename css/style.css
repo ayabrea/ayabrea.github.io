@@ -216,9 +216,6 @@ nav a {
   display:none; 
 }
 
-.project-details {
-
-}
 
 .project-title {
   font-family: 'Courier', sans-serif;
@@ -236,18 +233,21 @@ nav a {
 .project-type {
   font-family: 'Courier', sans-serif;
   text-align:center; 
+  font-weight: bold; 
 }
 
 .project-step {
   font-family: 'Courier', sans-serif;
-  color: #a3ccbe;
+  color: #93c3b2;
   text-align:center; 
+  font-weight: bold; 
 }
 
 .project-substep {
   font-family: 'Courier', sans-serif;
-  color: #a3ccbe;
+  color: #93c3b2;
   text-align: center; 
+  font-weight: bold; 
 }
 
 .project-img {
