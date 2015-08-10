@@ -71,9 +71,10 @@ a:hover {
 
 #menu { 
   background: #fff; 
-  font-size: 0.9em;
   position: relative;
   z-index: 1000;
+  padding-top: 10px;
+  font-size: 1.1em;
 }
 
 nav ul {
@@ -310,6 +311,9 @@ select:focus {
 
 /* Media */
 @media (min-width: 500px) {
+#menu {
+  font-size: 0.9em;
+}
 
 nav li {
   width: auto;
