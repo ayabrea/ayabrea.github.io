@@ -1,28 +1,123 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html>
 <head>
+<title>who is allison yan?</title>
+<meta name="description" content="Allison Yan, Product Strategy with Service Design Thinking, Toronto.">
+<meta name="keywords" content="allison yan, service design, user experience, design">
+<meta name="robots" content="index, follow" />
 
-  <meta charset="utf-8">
-  <title>something afoot</title>
-  <meta name="description" content="Allison Yan, UX/UI Designer, Toronto.">
-  <meta name="keywords" content="allison yan, healthcare, user experience, design, Toronto, Canada, interface, service">
-  <meta name="robots" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
 
+body {
+  background-color: #FAF9F6;
+}
+
+.outside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.inside {
+  font-family: 'Metal', cursive;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  text-align:left;
+  width: 60%;
+  color: #330099;
+}
+
+.title {
+  font-size: 1.8em;
+}
+
+a {
+  color: #000000;
+}
+
+#dragdiv {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  left:60%;
+}
+
+#dragdivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: #fff;
+  position: relative;
+}
+</style>
 </head>
 <body>
+<div class="outside">
+  <div class="inside">
+<span class="title">"It's the harmony that drives me."</span>
 
+<P>I am currently a Senior User Experience Designer working on experiences and services at SkipTheDishes.
+My approach to design is to zoom out to see the holistic experience, from before, during, and after.
+I am strongly interested in service design, trying new things, and collaboration.
+Much of my work over the years has involved uniting teams to identify overlapping user goals and business needs as a necessary foundation for meaningful innovation.
 
-i'll be back soon<br><br>
+Previous work includes: electronic medical record systems, television advertising technologies, web rebrands, e-commerce.</P>
 
-e-mail: allison.yan AT gmail.com<br>
-twitter: <a href="http://www.twitter.com/allisonyan_" target='_blank'>@allisonyan_</a><br>
-linkedin: <a href="http://www.linkedin.com/in/allisonyan" target='_blank'>allisonyan</a><br>
-last.fm: <a href="http://www.last.fm/user/babymilk" target='_blank'>babymilk</a>
+<P>Portfolio under construction. Please reach out with any inquiries.</P>
 
+<a href="mailto:hi@allisonyan.com">hi@allisonyan.com</a> * <a href="https://www.linkedin.com/in/allisonyan/">linkedin</a>
+<div id="dragdiv">
+  <div id="dragdivheader" style="font-size: 6em">&#10024;</div>
+</div>
+</div>
+</div>
+
+<script>
+dragElement(document.getElementById("dragdiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
 </body>
 </html>
